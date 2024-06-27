@@ -1,0 +1,111 @@
+{% extends 'navigation.html' %}
+{% comment %} {% extends 'navigation.html' %} {% endcomment %}
+{% load static %}
+{% block body %}
+{% comment %} {% load static %} {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login form</title>
+
+   <!-- custom css file link  -->
+   {% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+   {% comment %} <link rel="stylesheet" href="{% static 'style_login.css' %}"> {% endcomment %}
+   <style>
+      body{
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: white;
+      }
+      button{
+          background-color: #4CAF50;
+          width: 25%;
+          padding: 15px;
+          color: black;
+          border: none;
+          float: center;
+          font-size: 15px;
+      }
+      label{
+          font-size: 20px;
+      }
+      form{
+          border: 3px solid #f1f1f1;
+      }
+      input[type=email],input[type=password]{
+          width: 50%;
+          font-size: 15px;
+          margin: 8px 0px;
+          padding: 12px 20px;
+          display: inline-block;
+          border: 2px solid green;
+          box-sizing: border-box;
+      }
+      button:hover{
+          opacity:0.7;
+
+      }
+      .container{
+          padding: 50px;
+          background-color: white;
+      }
+      .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+      }
+
+      .container_login_form{
+        
+      }
+        
+      .logo-text-login{
+        width: 200px;
+        height: 100x;
+        padding: 20px;
+        margin-left: 40%;
+      }
+  </style>
+
+</head>
+<body>
+
+   <div class="container_login_form">
+      <center><h1>Login Form</h1></center>
+        <form action="booking/" method="post">
+            {% csrf_token %}
+            <center><div class="container">
+                <div class="logo-text-login">
+                    <img class="logo" src="/static/images/hospital.png" alt="">
+
+                      <h3 class="logo-heading">Eastern Hospital</h3>
+                  </div>
+                <label for ='email'><b>UserEmail :  </b></label>
+                <input type="email" placeholder="Enter email" name="email" float="right"  required><br>  
+                <label for='password'><b>Password : </b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>  
+                <button type="submit"><b>Login</b></button><br>     
+                Don't have accounct <a href="http://localhost:8000/signup/"> register </a>
+            </div></center>
+        </form>
+   </div>
+   
+{% comment %} <div class="form-container">
+
+   <form action="" method="post">
+      <h3>login now</h3>
+
+      <input type="email" name="email"  placeholder="enter your email">
+      <input type="password" name="password"  placeholder="enter your password">
+      <a href="#####"> <input type="submit" name="submit" value="login now" class="form-btn"> </a>
+      
+      <p>don't have an account? <a href="{% url 'register_form' %}">register now</a></p>
+   </form>
+  
+</div> {% endcomment %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+
+
+     
+</head>
+
+<body>
+
+  <header>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      
+      {% csrf_token %}
+    
+  
+  
+    <h1>Contact Us</h1>
+    <p>Please take a moment to get in touch, we will get back to you shortly.</p>   
+  
+    <div class="column">
+      
+      <input type="hidden" name="access_key" value="476294f3-e6e9-44e9-b6c9-e47b6fe8c9c9">
+
+      <label for="the-name">Your Name</label>
+      <input type="text" name="name" id="the-name">
+  
+      <label for="the-email">Email Address</label>
+      <input type="email" name="email" id="the-email">
+  
+      <label for="the-phone">Phone Number</label>
+      <input type="tel" name="phone" id="the-phone">
+
+      <label for="the-message">Message</label>
+      <input type="text" name="message" id="the-message">
+
+      <label>
+        <input type="checkbox" name="newsletter" value="yes"> Join our mailing list?
+        </label>
+
+ 
+        <input type="submit" value="submit" class='btn btn-primary btn-lg'  >
+        
+        
+    </div>
+  
+  
+</form>
+</header>
+{% endblock  %}
+</body>
+
+</html>

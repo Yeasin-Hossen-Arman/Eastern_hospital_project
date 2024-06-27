@@ -1,0 +1,126 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="{% static 'stylehome.css' %}">
+</head>
+
+<body>
+    <!-- <header>
+        <nav class="banner">
+            <div class="logo-text">
+                <img class="logo" src="images/hospital.png" alt="">
+                <h3 class="logo-heading">Eastern Hospital</h3>
+            </div>
+
+            <div class="nav-text">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="#">Doctors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="admin_page.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    </header> -->
+    <main>
+
+        <h2 class="blog-head">Recent Articles</h2>
+        <div class="blog">
+            <div class="blog-body">
+                <img class="ortho" src="static/images/orto.jpg" alt="">
+                <h3 class="ortho-head">Arthritis:know thy enemy</h3>
+                <p class="ortho-txt">Arthritis is a medical condition characterised by inflammation and
+                    <br>stiffness of the
+                    joints. Affecting millions of people..
+                </p>
+                <h4 class="ortho-doc">Dr. tonmoy Hasan in Orthopaedics and Joint replacement</h4>
+                <p class="ortho-txt">Feb 09,2024.</p>
+            </div>
+            <div class="knee">
+                <img class="ortho" src="static/images/knee.jpg" alt="">
+                <h3 class="ortho-head">Joint Pain or Swelling in Minors: Could be a Sign of <br>Juvenile
+                    Idiopathic Arthritis
+                    (JIA)</h3>
+                <p class="ortho-txt">In the world of paediatrics, childhood is often associated
+                    <br>with boundless energy,
+                    playfulness, and the spirit of growth andF..
+                </p>
+                <h4 class="ortho-doc">Dr. Toya khan in Orthopaedics and Joint replacement</h4>
+                <p class="ortho-txt">Feb 10,2024.</p>
+            </div>
+        </div>
+        
+        <div class="blog2">
+            <div class="aids">
+                <img class="ortho" src="static/images/aids.jpg" alt="">
+                <h3 class="ortho-head">World Aids Day:Awareness about the disease</h3>
+                <p class="ortho-txt">IIn the United States, HIV is transmitted through sexual contact, or use of a
+                    contaminated needle or syringe. More than 1.2 million people in the United States are living with
+                    HIV..
+                </p>
+                <h4 class="ortho-doc">Department of acute disease control</h4>
+                <p class="ortho-txt">March 1,2023.</p>
+            </div>
+            <div class="animea">
+                <img class="ortho" src="static/images/animea.jpg" alt="">
+                <h3 class="ortho-head">Anemia:might be linked to anxiety</h3>
+                <p class="ortho-txt">Many of the symptoms anxiety and panic attacks are similar to those associated with
+                    anemia and related problems may occur..</p>
+                <h4 class="ortho-doc">Dr. Tisha imroze in General Medicine</h4>
+                <p class="ortho-txt">Jan 10,2024.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="last1">
+            <div class="last-part">
+                <div class="last-info">
+                    <p class="last-text">44, Big Building Roosevelt Street</p>
+                    <p class="last-text2">Beach Gardens Florida 33410</p>
+                </div>
+
+                <div class="last-content">
+                    <div class="last-content1">
+                        <img class="last-image" src="static/images/Call.png" alt="">
+                        <p>+00 123 584 124</p>
+                    </div>
+                    <div class="last-content1">
+                        <img class="last-image2" src="static/images/Website.png" alt="">
+                        <p>www.website.com</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="icon">
+                <img class="i-im" src="static/images/Facebook.png" alt="">
+                <img class="i-im" src="static/images/Instagram.png" alt="">
+                <img class="i-im" src="static/images/Twitter.png" alt="">
+            </div>
+            <hr>
+            <div class="few">
+                <small>2017, All Rights Reserved</small>
+                <p>Unsubscribe</p>
+            </div>
+        </div>
+    
+    </footer>
+</body>
+{% endblock %}
+
+</html>
