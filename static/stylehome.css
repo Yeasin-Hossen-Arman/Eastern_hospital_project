@@ -55,7 +55,7 @@ li a:hover {
 .bg-pic {
     width: 1140px;
     height: 400px;
-    background-image: url('..static/images/bg2.png');
+    background-image: url('./img2.jpg');
     background-size: cover;
     display: block;
     padding-top: 250px;

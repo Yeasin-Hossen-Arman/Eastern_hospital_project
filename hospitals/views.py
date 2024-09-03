@@ -250,7 +250,7 @@ def view_queries(request,pid):
     return render(request,'view_queries.html', locals())
 
 # tazkia start
-import mysql.connector as sql
+# import mysql.connector as sql
 
 def main_login_page(request):
     return render(request, 'main_login_page.html')
