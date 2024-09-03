@@ -9,7 +9,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
-    <link rel="stylesheet" href="{% static 'booking.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'booking.css' %}"> {% endcomment %}
+    <style>
+              /* review section start */
+        .containerz{
+
+          height: 40vh;
+          width: 90%;
+          margin-top: 10px;
+          margin-bottom: 90px;
+          margin-left: 50px;
+          background-color: antiquewhite;
+          border: 1px solid rgb(178, 7, 7);
+          border-top-right-radius: 70px;
+          border-top-left-radius: 70px;
+          border-bottom-right-radius: 70px;
+          border-bottom-left-radius: 40px;
+          box-shadow: 30px 30px 50px rgba(201, 12, 12, 0.603);
+          /* display: flex; */
+          
+          /* background-color: beige; */
+        }
+        .containerz h4{
+          text-align: center;
+          padding: 8px;
+          margin-bottom: 20px;
+          font-size: large;
+          font-weight: 800;
+
+        }
+        .reviewrow{
+          display: flex;
+          flex-direction: row;
+          margin: 0 12px;
+          /* justify-content: space-between; */
+        }
+
+
+
+
+        .reviewcol{
+          width: 40%;
+          height: 17vh;
+          margin-left: 10px;
+          border: 2px solid black;
+          border-radius: 5%;
+          padding: 10px;
+          box-shadow: 25px 25px 40px rgba(0, 0, 0, 0.603);
+          transition: .01s;
+          text-align: center;
+        }
+        .reviewcol:hover{
+          transform: translateY(+10px);
+        }
+        .rv-img{
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          padding: 10px;
+        }
+
+        /* review section end */
+
+
+        /* feature section start */
+        .feature{
+          padding: 40px 80px;
+        }
+        .fra1{
+
+          padding: 20px 20px;
+          box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.6);
+          border:black;
+          border-radius: 20px;
+          display: flex;
+          
+
+          
+        }
+        .online{
+          width: 180px;
+          text-align: center;
+          padding: 25px 15px;
+          box-shadow: 15px 15px 25px rgba(0,0,0, 0.3);
+          border: 2px solid #cce7d0;
+          border-radius: 20px;
+          margin: 10px 15px;
+          transition: o.5s;
+
+        }
+        .online:hover{
+          transform: translateY(-30px);
+        }
+
+        /* feature section end*/
+        .btn-primary{
+          background-color: rgb(8, 200, 136);
+          padding: 5px;
+          
+        }
+        .btn-primary a{
+          color: white;
+          font-size: 20px;
+          text-decoration: none;
+        }
+            </style>
 
 
 </head>
